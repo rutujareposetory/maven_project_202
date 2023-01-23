@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="utility.TestListner"/>
+  </listeners>
+  <test thread-count="5" name="Testng(failed)" verbose="0">
+    <classes>
+      <class name="tests.Logintest">
+        <methods>
+          <include name="initalization"/>
+          <include name="verifytitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.Logintest -->
+      <class name="tests.Hometest">
+        <methods>
+          <include name="initalization"/>
+          <include name="precondition"/>
+          <include name="init"/>
+          <include name="logout"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.Hometest -->
+    </classes>
+  </test> <!-- Testng(failed) -->
+</suite> <!-- Failed suite [Suite] -->
